@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Homepage</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px;
+      min-height: 80vh;
+    }
+
+    .hero-text h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text span {
+      color: #2563eb;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .hero-image {
+      width: 450px;
+      height: 350px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #2563eb, #60a5fa);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Hidden by default */
+    .details {
+      display: none;
+      padding: 60px;
+      margin: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .details h2 {
+      color: #2563eb;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      margin-top: 40px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+    .hero-image {
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo-box {
+    text-align: center;
+    color: white;
+}
+
+.logo-icon {
+    font-size: 140px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.logo-box h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    
+    <div class="logo">MyBrand</div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>Modern Design</span></h1>
+      <p>Professional animated homepage design.</p>
+    </div>
+
+<div class="hero-image">
+    <div class="logo-box">
+        <div class="logo-icon">◆M◆</div>
+        <h2>MyBrand</h2>
+    </div>
+</div>
+  </section>
+
+  <section class="features">
+    
+    <!-- Clickable Card -->
+    <div class="card" onclick="showDetails()">
+      <h3>Creative Design</h3>
+      <p>Click here to see more details.</p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive UI</h3>
+      <p>Modern responsive layouts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Easy to Use</h3>
+      <p>Simple and clean design.</p>
+    </div>
+  </section>
+
+  <!-- Hidden Details -->
+  <section class="details" id="detailsSection">
+    <h2>Creative Design Details</h2>
+    <p>
+      Here is the full information about our creative design services.
+      This section appears only after clicking the Creative Design card.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 MyBrand. All rights reserved.
+  </footer>
+
+  <script>
+    function showDetails() {
+      document.getElementById("detailsSection").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Contact Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 320px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      width: 90px;
+      height: 90px;
+      background: #d9d9d9;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+
+    .contact-box {
+      flex: 1;
+      background: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 20px;
+    }
+
+    .social-box {
+      background: #aab3f5;
+      padding: 20px;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      justify-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #d9d9d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .info-box {
+      background: #f4c6ea;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      color: #333;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="card">
+    <div class="profile"></div>
+
+     <div class="contact-row">
+      <a href="tel:+919876543210" class="contact-box">📞 Phone</a>
+      <a href="sms:+919876543210" class="contact-box">💬 Message</a>
+    </div>
+
+    <div class="social-box">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn" />
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+    </div>
+
+    <div class="info-box">
+      <h3>John Doe</h3>
+      <p>Frontend Developer</p>
+      <p>@johndoe_social</p>
+      <p>+91 98765 43210</p>
+    </div>
+  </div>
+</body>
+</html>
+
